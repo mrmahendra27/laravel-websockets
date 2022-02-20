@@ -29,8 +29,9 @@ require('./bootstrap');
 
  import { createApp } from 'vue';
  import ExampleComponent from './components/ExampleComponent.vue';
- 
+ import Chat from './components/Chat.vue';
+
  let app=createApp({})
- app.component('example-component' , ExampleComponent);
+ app.component('chat', Chat);
  
  app.mount("#app")

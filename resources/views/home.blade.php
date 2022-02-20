@@ -7,14 +7,16 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
+                <div class="card-body text-center">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    Welcome back, {{ Auth::user()->name }}
+                    <br>
+                    <a href="{{route('chat')}}" class="btn btn-primary center">Chat now</a>
                 </div>
             </div>
         </div>

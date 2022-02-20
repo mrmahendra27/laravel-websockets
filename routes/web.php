@@ -1,6 +1,7 @@
 <?php
 
 use App\Events\WebSocketEvent;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/chat', [App\Http\Controllers\HomeController::class, 'chat'])->name('chat');
+
+Route::get('/messages', [App\Http\Controllers\HomeController::class, 'getMessages'])->name('messages');
+
+Route::post('/messages', [App\Http\Controllers\HomeController::class, 'storeMessage'])->name('store.message');
+
+

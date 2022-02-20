@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37ca54af56ed2b4442aef6da669b9e7f",
+    "content-hash": "9ebaea1a37382152a687d520eb9712df",
     "packages": [
         {
             "name": "beyondcode/laravel-websockets",
@@ -3544,7 +3544,7 @@
         },
         {
             "name": "pusher/pusher-php-server",
-            "version": "7.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pusher/pusher-http-php.git",
@@ -3568,6 +3568,7 @@
                 "overtrue/phplint": "^2.3",
                 "phpunit/phpunit": "^8.5|^9.3"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {

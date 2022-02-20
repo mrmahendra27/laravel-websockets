@@ -40,4 +40,9 @@ class SendMessage implements ShouldBroadcast
     {
         return new PrivateChannel('chat-channel');
     }
+
+    public function broadcastAs()
+    {
+        return 'SendMessage';
+    }
 }

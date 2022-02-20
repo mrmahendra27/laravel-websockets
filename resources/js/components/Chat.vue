@@ -61,7 +61,9 @@ export default {
       scrollBottom();
     });
 
-    Echo.private("chat-channel").listen("SendMessage", (e) => {
+    window.Echo.private("chat-channel").listen(".SendMessage", (e) => {
+      console.log("Got event...");
+      console.log(e);
       messages.value.push({
         message: e.message.message,
         user: e.user,

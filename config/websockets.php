@@ -65,8 +65,8 @@ return [
         [
             'id' => env('PUSHER_APP_ID'),
             'name' => env('APP_NAME'),
-            'host' => env('PUSHER_APP_HOST'),
-            'key' => env('PUSHER_APP_KEY'),
+            'host' => env(' '),
+            'key' => 'local',
             'secret' => env('PUSHER_APP_SECRET'),
             'path' => env('PUSHER_APP_PATH'),
             'capacity' => null,
